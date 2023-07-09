@@ -30,8 +30,10 @@ public class LongestCommonSubsequence {
                 i++;
                 j++;
             }
-            else if (opt[i+1][j] >= opt[i][j+1]) i++;
-            else                                 j++;
+            else if (opt[i+1][j] >= opt[i][j+1])
+                i++;
+            else
+                j++;
         }
         return lcs;
     }

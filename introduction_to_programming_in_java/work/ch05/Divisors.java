@@ -1,8 +1,8 @@
 class Divisors {
 
 	public static int gcd(int a, int b) {
-	
-        int tmp = 0;    
+
+        int tmp = 0;
         a = Math.abs(a);
         b = Math.abs(b);
 
@@ -16,7 +16,6 @@ class Divisors {
                 a = a % b;
             }
         }
-
         return a;
 	}
 
@@ -34,13 +33,13 @@ class Divisors {
 	}
 
 	public static boolean areRelativelyPrime(int a, int b) {
-		
+
 		boolean ret;
 		int gcd_value = gcd(a,b);
 
 		if(gcd_value == 1)
 			ret =  true;
-		else 
+		else
 			ret = false;
 
 		//StdOut.println(gcd_value);
@@ -54,7 +53,7 @@ class Divisors {
 		for (int i = 1; i <= n; i++) {
 			if(areRelativelyPrime(i, n))
 				ret++;
-		}	
+		}
 
 		return ret;
 	}
